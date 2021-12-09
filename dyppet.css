@@ -1,0 +1,49 @@
+
+
+.item1 { grid-area: petersportfolio; grid-column-start: 1; grid-column-end: 6; }
+.item2 {grid-area: semester; }
+.item3 { grid-area: kontakt; }
+.item4 { grid-area: ommig; }
+.item5 { grid-area: footer; grid-column-start: 1; grid-column-end: 6;
+}
+.item1 { font-size: 15px;
+}
+
+
+
+
+
+
+.item5 { font-size: 15px; align-self: flex-end;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'petersportfolio'
+    'semester'
+    'kontakt'
+    'ommig'
+    'footer';
+    grid-gap: 3px;
+    grid-template-columns: 1fr 4fr 1fr 1fr;
+    background-color:
+    padding:100px;
+    grid-auto-columns: minmax(200px,auto);
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+
+}
+@media screen and (min-width: 50px) { html,
+  body{
+    height: auto;
+    background-color: antiquewhite;
+    font-family:sans-serif; 
+}
+
+
+img { max-width: 100px;
+  height: auto;
